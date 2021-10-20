@@ -1,3 +1,6 @@
 This is an API that translates text into UwU language
 
 usage: 
+localhost:3000/uwu?text=Your text here
+
+returns UwUified text as json
