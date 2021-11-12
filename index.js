@@ -13,4 +13,6 @@ app.get('/uwu', function (req, res) {
     res.json({Text: uwu})
 })
 
-app.listen(3000)
+var port = process.env.PORT || 3000;
+
+app.listen(port);
