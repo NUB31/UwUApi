@@ -4,6 +4,10 @@ const Uwuifier = require('uwuifier');
 
 const uwuifier = new Uwuifier();
 
+app.get('/', function (req, res) {
+    res.json({apis: /uwu})
+})
+
 app.get('/uwu', function (req, res) {
     var uwu = uwuifier.uwuifySentence(req.query.text)
     res.json({Text: uwu})
