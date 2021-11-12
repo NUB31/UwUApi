@@ -5,7 +5,7 @@ const Uwuifier = require('uwuifier');
 const uwuifier = new Uwuifier();
 
 app.get('/', function (req, res) {
-    res.json({apis: /uwu})
+    res.send("only /uwu for now. Use /uwu?text=xxx to get uwufied text")
 })
 
 app.get('/uwu', function (req, res) {
